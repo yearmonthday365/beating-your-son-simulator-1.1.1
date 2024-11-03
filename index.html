@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Punching Game</title>
+    <style>
+        #gameCanvas {
+            border: 1px solid black;
+        }
+
+        #inventoryPanel {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            display: none;
+        }
+
+        #shopPanel {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            color: white;
+            display: none;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="inventoryPanel">
+        <ul id="inventoryItems"></ul>
+        <button id="equipButtonSlipper">Equip Slipper</button>
+        <button id="equipButtonBottle">Equip Bottle</button>
+        <button id="equipButtonBelt">Equip Belt</button>
+        <button id="equipButtonWhip">Equip Whip</button>
+        <button id="equipButtonMace">Equip Mace</button>
+    </div>
+    <button id="shopButton">Shop</button>
+    <button id="characterShopButton">Character Shop</button>
+    <button id="respawnButton">Respawn</button>
+    <script src="script.js"></script>
+</body>
+</html>
